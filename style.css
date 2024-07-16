@@ -135,13 +135,28 @@ main > section{
     margin-bottom: 20px;
     border-radius: 8px;
 }
-
+.experience-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.experience{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.feature-architect{
+    width: 100%;
+}
 /* some fact section style  */
 .fact-main-title{
     margin-bottom: 24px;
 }
 .fact-description{
-    width: auto;
+    width: 100%;
     font-size: 1.25rem;
     margin-bottom: 100px;
 }
@@ -190,6 +205,17 @@ main > section{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+    .will-enjoy-container{
+        flex-wrap: wrap;
+    }
+    .feature-architect img{
+        width: 100%;
+        margin: 0;
+    }
+    .experience-badge{
+        margin-top: 20px;
+        margin-left:0px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -202,5 +228,9 @@ main > section{
     .fact-child{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 24px;
+    }
+    .will-enjoy-container{
+        flex-wrap: wrap;
+        gap: 25px;
     }
 }
