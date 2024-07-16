@@ -201,6 +201,7 @@ main > section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 155px;
+    margin-top: 50px;
 }
 .sponsor-text > h2{
     font-size: 2.8rem;
@@ -258,6 +259,10 @@ footer > p{
         margin-top: 20px;
         margin-left:0px;
     }
+    .sponsor-card{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -274,5 +279,9 @@ footer > p{
     .will-enjoy-container{
         flex-wrap: wrap;
         gap: 25px;
+    }
+    .sponsor-card{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
