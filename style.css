@@ -118,22 +118,41 @@ main > section{
     font-size: 1.25rem;
 }
 
+/* will enjoy design  */
+.will-enjoy-container{
+    gap: 140px;
+}
+.will-enjoy-title{
+    border-left: 4px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+.will-enjoy-card{
+    width: 100%;
+    height: 171px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
 /* some fact section style  */
 .fact-main-title{
     margin-bottom: 24px;
 }
 .fact-description{
-    width: 542px;
+    width: auto;
     font-size: 1.25rem;
     margin-bottom: 100px;
 }
-.child{
+.fact-child{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 
 }
 .fact{
-    width: 241px;
+    width: 100%;
     height: 241px;
     border:1px solid rgb(255, 144, 14);
     border-radius: 8px;
@@ -167,8 +186,9 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
-    .child{
+    .fact-child{
         grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 }
 
@@ -178,5 +198,9 @@ main > section{
     }
     .our-features{
         margin: 50px auto;
+    }
+    .fact-child{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
     }
 }
